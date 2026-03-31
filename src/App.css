@@ -110,7 +110,7 @@ input{
 }
 
 /* ===== MOBILE ===== */
-@media (max-width: 500px) {
+@media (min-width: 768px) {
   
   .landing {
     padding: 2rem;
