@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 body{
   min-height: 100vh;
   display:flex;
@@ -7,6 +11,8 @@ body{
   background-image: url('/public/38611359_dr7.jpg');
   background-size: cover;
   background-color: navy;
+  margin: 0;
+  overflow-x: hidden;
 }
 
 .landing{
@@ -25,7 +31,7 @@ body{
   max-width: 800px;
   text-align: center;
   /* margin: 4rem 0 0 15rem; */
-  padding:8rem;
+  padding:4rem;
   position: relative;
   overflow: hidden;
 
@@ -102,7 +108,7 @@ input{
 }
 
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .landing {
     padding: 6rem;
   }
@@ -110,7 +116,7 @@ input{
 }
 
 /* ===== MOBILE ===== */
-@media (min-width: 768px) {
+@media (max-width: 500px) {
   
   .landing {
     padding: 2rem;
