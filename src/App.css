@@ -1,38 +1,92 @@
-.App {
+body{
+  height: 100%;
+  background-image: url('/public/38611359_dr7.jpg');
+  background-size: cover;
+  background-color: navy;
+}
+
+.landing{
+
+   background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px); /* 🔥 main glass effect */
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+
+  height:25rem;
+  width:50rem;
   text-align: center;
-}
+  margin: 4rem 0 0 15rem;
+  padding:8rem;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
+.landing h1,p{
+  text-align: left;
+  color: navy;
+    width: 400px;
+  overflow-wrap: break-word;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.landing .buttons{
+  
+  text-align: left;
+  margin-top: 2rem;
+  padding-left: 0;
+}
+.landing button{
+  width:10rem;
+  height: 3rem;
+  margin: 1rem;
+  background-color: navy;
   color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.login,.signup{
+  
+  background: rgba(255, 255, 255, 0.1);
+  /* background-image:url('/public/201337824_abf8df82-4947-4068-b0ae-b491d6973a23.jpg'); */
+  /* background-size: cover; */
+  backdrop-filter: blur(10px); /* 🔥 main glass effect */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+  width:20rem;
+  height: 30rem;
+  color: navy;
+  margin: 7rem 0 0 35rem;
+  padding:2rem;
+  font-size: 24px;
+}
+input{
+  width:20rem;
+  height:2rem;
+  border-radius: 10px;
+  border: 1px solid navy;
+  margin-top:1rem;
+  text-align:start;
+
+}
+.login button, .signup button, .dashboard button{
+  width:6rem;
+  height: 3rem;
+  background-color: navy;
+  color:white;
+  border-radius: 30px;
+  font-weight: bolder;
+  border: none;
+  margin-top: 2rem;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dashboard{
+  text-align: center;
+  margin-top:20rem;
+
 }
+
+

@@ -1,0 +1,11 @@
+import React from 'react'
+import { useNavigate } from 'react-router-dom'
+
+export default function Dashboard() {
+    const navigate=useNavigate();
+  return (
+    <div className='dashboard'>
+        <button onClick={() => navigate("/")} >Logout </button>
+    </div>
+  )
+}
