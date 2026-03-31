@@ -1,5 +1,9 @@
 body{
-  height: 100%;
+  min-height: 100vh;
+  display:flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* padding: 20px; */
   background-image: url('/public/38611359_dr7.jpg');
   background-size: cover;
   background-color: navy;
@@ -7,18 +11,23 @@ body{
 
 .landing{
 
-   background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px); /* 🔥 main glass effect */
 
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   border-radius: 30px;
 
-  height:25rem;
-  width:50rem;
+  /* height:25rem; */
+  height: 100%;
+  max-height: 400px;
+  width:100%;
+  max-width: 800px;
   text-align: center;
   margin: 4rem 0 0 15rem;
   padding:8rem;
+  position: relative;
+  overflow: hidden;
 
 
 }
@@ -49,14 +58,16 @@ body{
 .login,.signup{
   
   background: rgba(255, 255, 255, 0.1);
-  /* background-image:url('/public/201337824_abf8df82-4947-4068-b0ae-b491d6973a23.jpg'); */
-  /* background-size: cover; */
   backdrop-filter: blur(10px); /* 🔥 main glass effect */
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   border-radius: 30px;
-  width:20rem;
-  height: 30rem;
+  height: 100%;
+  max-height: 500px;
+  width:100%;
+  max-width: 330px;
+  /* width:20rem; */
+  /* height: 30rem; */
   color: navy;
   margin: 7rem 0 0 35rem;
   padding:2rem;
@@ -90,3 +101,28 @@ input{
 }
 
 
+@media (max-width: 768px) {
+  .landing {
+    padding: 6rem;
+  }
+
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 500px) {
+  
+  .card {
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+   /* Buttons stack vertically */
+  .button {
+    flex-direction: column;
+    gap: 10px;
+        width: 100%;
+
+  }
+
+
+}
