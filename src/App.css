@@ -1,9 +1,9 @@
 body{
   min-height: 100vh;
   display:flex;
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* padding: 20px; */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
   background-image: url('/public/38611359_dr7.jpg');
   background-size: cover;
   background-color: navy;
@@ -24,7 +24,7 @@ body{
   width:100%;
   max-width: 800px;
   text-align: center;
-  margin: 4rem 0 0 15rem;
+  /* margin: 4rem 0 0 15rem; */
   padding:8rem;
   position: relative;
   overflow: hidden;
@@ -34,7 +34,7 @@ body{
 .landing h1,p{
   text-align: left;
   color: navy;
-    width: 400px;
+    width: 100%;
   overflow-wrap: break-word;
 
 }
@@ -45,6 +45,7 @@ body{
   padding-left: 0;
 }
 .landing button{
+  /* display: flex; */
   width:10rem;
   height: 3rem;
   margin: 1rem;
@@ -69,12 +70,12 @@ body{
   /* width:20rem; */
   /* height: 30rem; */
   color: navy;
-  margin: 7rem 0 0 35rem;
+  /* margin: 7rem 0 0 35rem; */
   padding:2rem;
   font-size: 24px;
 }
 input{
-  width:20rem;
+  width:100%;
   height:2rem;
   border-radius: 10px;
   border: 1px solid navy;
@@ -111,17 +112,30 @@ input{
 /* ===== MOBILE ===== */
 @media (max-width: 500px) {
   
-  .card {
-    padding: 20px;
-    border-radius: 15px;
+  .landing {
+    padding: 2rem;
+    text-align: center;
+  }
+   .landing h1,
+  .landing p {
+    text-align: center;
   }
 
    /* Buttons stack vertically */
-  .button {
+  .buttons {
     flex-direction: column;
+    align-items: center;
     gap: 10px;
-        width: 100%;
+    width: 100%;
 
+  }
+
+  .landing button{
+    width:100%;
+    max-width: 200px;
+  }
+  .login , .signup{
+    padding: 1.5rem;
   }
 
 
