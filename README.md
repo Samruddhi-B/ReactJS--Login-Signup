@@ -3,6 +3,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## You can see the preview here
+https://react-js-login-signup-five.vercel.app/
+
 ## Available Scripts
 
 In the project directory, you can run:
